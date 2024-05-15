@@ -1,0 +1,27 @@
+{
+  "name": "angeo",
+  "version": "0.0.1",
+  "author": {
+    "name": "Geovanny AlEx Rs",
+    "email": "gmagallan.94@gmail.com"
+  },
+  "description": "Biblioteca Angeo: Proyecto de prueba",
+  "keywords": [
+    "angular",
+    "typescript",
+    "angeo",
+    "biblioteca",
+    "libreria"
+  ],
+  "repository": {
+    "url": "https://github.com/geovannyAlExRs"
+  },
+  "peerDependencies": {
+    "@angular/common": "^16.2.0",
+    "@angular/core": "^16.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
