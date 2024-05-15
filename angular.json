@@ -99,6 +99,75 @@
           }
         }
       }
+    },
+    "angeo": {
+      "projectType": "library",
+      "root": "projects/angeo",
+      "sourceRoot": "projects/angeo/src",
+      "prefix": "geova",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angeo/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angeo/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angeo/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/angeo/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "angeo-view": {
+      "projectType": "library",
+      "root": "projects/angeo-view",
+      "sourceRoot": "projects/angeo-view/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angeo-view/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angeo-view/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angeo-view/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/angeo-view/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
+  },
+  "cli": {
+    "analytics": "167c2ff3-b10d-4d4e-a3ec-f806f75259d1"
   }
 }
